@@ -1,64 +1,141 @@
 <html>
   <head>
     <title>Alan in Cornwall.</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <style>
-      @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
-
-      $deep-purple  = #49267a
-      $dark-gray    = #2b262d
-      $light-gray   = #c1c1c1
-      $white        = #ffffff
-      $yellow-sun   = #efd76f
-      $tangerine    = #ea8b49
-      $rasberry     = #e84d6f
-      $pool-blue    = #63ddea
-
-
-
-      body
-        background-color $deep-purple
-        animation background-pulse 40s infinite 1s 
-        font-family 'Source Sans Pro', sans-serif
-
-      @keyframes background-pulse
-        0% 
-          background-color $deep-purple
-        25%
-          background-color $pool-blue
-        50%
-          background-color $tangerine
-        75% 
-          background-color $rasberry
-        100% 
-          background-color $deep-purple
-
-
-      .message
-        left 50%
-        position absolute
-        text-align center
-        top 50%
-        transform translate(-50%, -50%)
-
-      .message .logo
-        width 100px
-
-      .message__text
-        animation pulse-text 1s 1s ease-out forwards
-        color $white
-        margin 0
-        opacity 0
+      body {
+        background-color: #49267a;
+        animation: background-pulse 40s infinite 1s;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      .message {
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .message .logo {
+        width: 100px;
+      }
+      .message__text {
+        animation: pulse-text 1s 1s ease-out forwards;
+        color: #fff;
+        margin: 0;
+        opacity: 0;
+      }
       .xl {
         font-size: 20px;
-
       }
-      @keyframes pulse-text
-          to
-            opacity 1
+      @-moz-keyframes background-pulse {
+        0% {
+          background-color: #49267a;
+        }
+        25% {
+          background-color: #63ddea;
+        }
+        50% {
+          background-color: #ea8b49;
+        }
+        75% {
+          background-color: #e84d6f;
+        }
+        100% {
+          background-color: #49267a;
+        }
+      }
+      @-webkit-keyframes background-pulse {
+        0% {
+          background-color: #49267a;
+        }
+        25% {
+          background-color: #63ddea;
+        }
+        50% {
+          background-color: #ea8b49;
+        }
+        75% {
+          background-color: #e84d6f;
+        }
+        100% {
+          background-color: #49267a;
+        }
+      }
+      @-o-keyframes background-pulse {
+        0% {
+          background-color: #49267a;
+        }
+        25% {
+          background-color: #63ddea;
+        }
+        50% {
+          background-color: #ea8b49;
+        }
+        75% {
+          background-color: #e84d6f;
+        }
+        100% {
+          background-color: #49267a;
+        }
+      }
+      @keyframes background-pulse {
+        0% {
+          background-color: #49267a;
+        }
+        25% {
+          background-color: #63ddea;
+        }
+        50% {
+          background-color: #ea8b49;
+        }
+        75% {
+          background-color: #e84d6f;
+        }
+        100% {
+          background-color: #49267a;
+        }
+      }
+      @-moz-keyframes pulse-text {
+        to {
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes pulse-text {
+        to {
+          opacity: 1;
+        }
+      }
+      @-o-keyframes pulse-text {
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes pulse-text {
+        to {
+          opacity: 1;
+        }
+      }
+      @-moz-keyframes pulse {
+        to {
+          stroke-opacity: 1;
+        }
+      }
+      @-webkit-keyframes pulse {
+        to {
+          stroke-opacity: 1;
+        }
+      }
+      @-o-keyframes pulse {
+        to {
+          stroke-opacity: 1;
+        }
+      }
+      @keyframes pulse {
+        to {
+          stroke-opacity: 1;
+        }
+      }
 
-       @keyframes pulse
-          to
-            stroke-opacity 1
     </style>
   </head>
   <body>
